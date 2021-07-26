@@ -16,7 +16,7 @@ const PasswordReset = () => {
       });
     } else {
       const res = await fetch(
-        "https://password-reset-mail.herokuapp.com/password-reset/:token",
+        "https://password-reset-mail.herokuapp.com/password-reset",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
